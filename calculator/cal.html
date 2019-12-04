@@ -1,0 +1,54 @@
+<html lang="en">
+	<head>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.css"/>
+		<meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1"/>
+		
+    </head>
+    <link rel="stylesheet" href="cal.css">
+<body>
+	<nav class="navbar navbar-default">
+		<div class="container-fluid">
+			
+
+</a>		</div>
+	</nav>
+	<div class="col-md-3"></div>
+	<div class="col-md-6 well">
+		<h1 class="text-primary"> Currency Converter</h1>
+		<hr style="border-top:1px dotted #ccc;">
+		<div class="col-md-2"></div>
+		<div class="col-md-8">
+			
+			<hr style="border-top:1px groovy #ccc;"/>
+			<div class="form-group">
+				<select onchange="Currency(); Calculate()" class="form-control" id="converter" style="width:30%;">
+					
+                    <option value="Euro">Euro</option>
+                    <option value="Ind">Ind</option>
+                    <option value="Dollar">Dollar</option>
+                    
+					
+				</select>
+				<br />
+				<input type="number" oninput="Calculate()" class="form-control" id="value1"/>
+			</div>
+			<br /><br />
+			<div class="form-group">
+				<label>convert</label>
+				<input type="number" class="form-control" id="value2" disabled="disabled"/>
+			</div>
+		</div>
+    </div>
+<div></div>
+
+    <div>
+    <h1>Weight Converter</h1>
+        Input Grams(g): <input type="text" name="grams" id="grams">
+<br>
+Results: <p id="convert"><button onclick="kilo()">Kilogram</button></p>
+
+
+    </div>
+    <script src="cal.js"></script>
+</body>
+</html>
